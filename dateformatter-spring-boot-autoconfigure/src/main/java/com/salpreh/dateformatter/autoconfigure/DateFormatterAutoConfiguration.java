@@ -19,7 +19,7 @@ public class DateFormatterAutoConfiguration {
     @ConditionalOnMissingBean
     public DateFormatterConfig dateFormatterConfig(DateFormatterProperties properties) {
         String localDateTimePattern = properties.getLocalDateTimeFormatter() != null
-            ? properties.getLocalDateFormatter()
+            ? properties.getLocalDateTimeFormatter()
             : DateFormatterDefaults.LOCAL_DATETIME_PATTERN;
 
         String offsetDateTimePattern = properties.getOffsetDateTimeFormatter() != null

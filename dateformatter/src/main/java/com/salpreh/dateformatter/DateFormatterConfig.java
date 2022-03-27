@@ -3,7 +3,7 @@ package com.salpreh.dateformatter;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 
-@Value()
+@Value
 @AllArgsConstructor(staticName = "build")
 public class DateFormatterConfig {
     private String localDateTimePattern;
